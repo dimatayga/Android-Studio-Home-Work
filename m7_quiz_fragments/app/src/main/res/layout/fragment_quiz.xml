@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#5DC1B7">
+
+        <TextView
+            android:id="@+id/firstQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/opensans_bold"
+            android:layout_marginTop="16dp"
+            android:text="@string/q1" />
+
+        <RadioGroup
+            android:id="@+id/firstGroup"
+            android:background="@color/teal_700"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/firstGroupOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/_2"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/firstGroupTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/_3"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/firstGroupThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/_4"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/firstGroupFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/_5"
+                android:textSize="11sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/secondQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/opensans_bold"
+            android:layout_marginTop="16dp"
+            android:text="@string/q2" />
+
+        <RadioGroup
+            android:id="@+id/secondGroup"
+            android:background="@color/teal_700"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/secondGroupOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:textSize="11sp"
+                android:text="@string/q21"/>
+            <RadioButton
+                android:id="@+id/secondGroupTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/q22"
+                android:textSize="11sp"/>
+            <RadioButton
+                android:id="@+id/secondGroupThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/q23"
+                android:textSize="11sp"/>
+            <RadioButton
+                android:id="@+id/secondGroupFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/q24"
+                android:textSize="11sp"/>
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/thirdQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/opensans_bold"
+            android:layout_margin="16dp"
+            android:text="@string/q3" />
+
+        <RadioGroup
+            android:id="@+id/thirdGroup"
+            android:background="@color/teal_700"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/thirdGroupOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/q31"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/thirdGroupTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/q32"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/thirdGroupThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/q33"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/thirdGroupFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/q34"
+                android:textSize="11sp" />
+        </RadioGroup>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp">
+
+            <Button
+                android:id="@+id/buttonBack"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.MyButton"
+                android:layout_width="133dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/buttonPush"
+                app:layout_constraintHorizontal_bias="0.155"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+
+                android:id="@+id/buttonPush"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.MyButton"
+                android:layout_width="133dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/Push"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.483"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
